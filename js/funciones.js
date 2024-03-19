@@ -148,7 +148,7 @@ const notificacion = (texto) => {
 const renderBotonCarrito = () => {
     document.getElementById("totalCarrito").innerHTML = cantTotalProductos();
 }
-fetch('./productos.json')
+fetch('../js/productos.json')
 .then(respuesta => respuesta.json())
 .then(productos => {
    guardarProductosLS(productos);
